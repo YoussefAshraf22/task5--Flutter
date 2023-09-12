@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:task5/widgets/component_view.dart';
+import 'package:task5/widgets/homePage_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,12 +21,13 @@ class HomePage extends StatelessWidget {
             ),
           )
         ],
-        leading: const Icon(
-          Icons.arrow_back,
-          color: Colors.white,
-        ),
+        // leading: const Icon(
+        //   Icons.arrow_back,
+        //   color: Colors.white,
+        // ),
         backgroundColor: Colors.black,
       ),
+      drawer: const HomeDrawer(),
       body: SingleChildScrollView(
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
